@@ -1,0 +1,53 @@
+Autor: Patrycja Trojan
+Kraków 2021
+
+----------------------------------------------------------
+
+* Aby uruchomic caly program, nalezy wpisac w terminalu:
+
+    make run
+    --------
+
+* Program losuje liczby do tablicy, ktora nastepnie jest
+    sortowana za pomoca algorytmu sortowania babelkowego,
+    a przy okazji zliczane sa operacje dominujace.
+    Nastepnie to samo dzieje sie dla algorytmu sortowania
+    przez scalanie.
+
+    Potem te dzialania sa powtarzane n razy dla roznych
+    wielkosci tablic, a dane zapisywane sa do plikow, ktore
+    posluza do sporzadzenia wykresow.
+
+
+ZLOZONOSCI OBLICZENIOWE ALGORYTMOW:
+-----------------------------------
+
+* Sortowanie babelkowe
+
+    Zlozonosc pesymistyczna: 
+        Algorytm musi przejsc przez n-1 elementow, a przy
+        kazdym przejsciu wykonuje n-k (k - numer przejscia)
+        porownan. To samo, jesli chodzi o przestawienia.
+        Zlozonosc pesymistyczna bedzie zatem rzedu O(n^2).
+
+    Wrazliwosc:
+        W najlepszym przypadku zostanie wykonanych n-1
+        porownan, wiec zlozonosc takiego przypadku bedzie
+        rowna O(n). Jesli chodzi o przestawianie, to
+        w najlepszym przypadku zadne nie zostanie 
+        wykonane - O(1). Wrazliwosc w takim razie to n^2 - n.
+
+* Sortowanie przez scalanie:
+
+    Zlozonosc pesymistyczna:
+        Problem sprowadza sie do rekursyjnego rozwiazania
+        w postaci T(n) = 2*T(n/2) + n, poniewaz dzielimy go
+        za kazdym razem na dwie czesci. Jest to zlozonosc
+        rzedu O(n*log(n)).
+
+    Wrazliwosc:
+        W przypadku optymistycznym przy liczbie porownan
+        jest taka sama sytuacja, wiec wrazliwosc bedzie
+        rowna 0. Roznic sie bedzie tylko liczba przestawien.
+
+-------------------------------------------------------------

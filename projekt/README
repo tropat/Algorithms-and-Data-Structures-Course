@@ -1,0 +1,23 @@
+Autor: Patrycja Trojan
+Kraków 2022
+
+----------------------------------------------------------
+
+* Aby uruchomic caly program, nalezy wpisac w terminalu:
+
+    make run
+    --------
+
+*Program sklada sie z plikow:
+    poly.cpp
+    poly.h
+    test.cpp
+
+* Program sklada sie z klasy reprezentujacej wielomiany
+    z wykorzystaniem tablic oraz podstawowe operacje, takie
+    jak dodawanie wielomianow, odejmowanie, mnozenie
+    wielomianow przez siebie oraz mnozenie wielomianu przez
+    liczbe, a takze liczenie wartosci wielomianu dla
+    zadanego x za pomoca schematu hornera.
+    Program korzysta z pliku test.cpp, ktory pozwala na
+    przetestowanie wymienionych wyzej funkcji.

@@ -1,0 +1,13 @@
+Autor: Patrycja Trojan
+Kraków 2021
+
+----------------------------------------------------------
+
+* Aby uruchomic caly program, nalezy wpisac w terminalu:
+
+    g++ main.cpp onewayList.cpp twowayList.cpp
+    __________________________________________
+
+* Program zawiera implementacje listy jednokierunkowej
+    i dwukierunkowej oraz operacje niezbedne do ich
+    poprawnego funkcjonowania.
